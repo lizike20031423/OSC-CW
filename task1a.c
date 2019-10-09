@@ -35,7 +35,7 @@ int main() {
 		printf("Previous Burst Time = %d, ", p -> iPreviousBurstTime);
 		printf("New Burst Time = %d, ", p -> iRemainingBurstTime);
 		long int responseTime = getDifferenceInMilliSeconds(p -> oTimeCreated, pStartTime);
-		printf("Response Time = %ld ,", responseTime);
+		printf("Response Time = %ld, ", responseTime);
 		sumResponseTime += responseTime;
 		long int turnAroundTime = getDifferenceInMilliSeconds(p -> oTimeCreated, pEndTime);
 		printf("Turn Around Time = %ld\n", turnAroundTime);
